@@ -7,9 +7,9 @@ namespace Blog.Data.Reppository
 {
   public interface IRepository<T>
   {
-    IEnumerable<T> FindAll();
+    IQueryable<T> FindAll();
     T FindOne(Expression<Func<T, bool>> predicate);
-    IEnumerable<T> Find(Expression<Func<T, bool>> predicate);
+    IQueryable<T> Find(Expression<Func<T, bool>> predicate);
     void Add(T entity);
     void Update(T entity);
     void Delete(T entity);

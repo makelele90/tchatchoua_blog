@@ -47,11 +47,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BlogDataContext.cs" />
+    <Compile Include="BlogDbInitializer.cs" />
     <Compile Include="BlogPost.cs" />
     <Compile Include="Reppository\BaseRepository.cs" />
     <Compile Include="Reppository\IRepository.cs" />
     <Compile Include="PostComment.cs" />
-    <Compile Include="Reppository\Repository.cs" />
+    <Compile Include="Reppository\GenericRepository.cs" />
+    <Compile Include="Reppository\UserRepository.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

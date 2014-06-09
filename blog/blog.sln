@@ -1,11 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "blog", "blog\blog.csproj", "{BF3CB5DA-6896-4CE3-B45E-147D8FAF0465}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blog.Data", "Blog.Data\Blog.Data.csproj", "{BF0ABBC7-9BE8-4BA6-9E36-8EBC8F16C372}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlogTest", "BlogTest\BlogTest.csproj", "{BDAC9039-8035-466A-B44C-F358EC6E1E83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestClient", "TestClient\TestClient.csproj", "{F363FFA8-8E2F-448A-8DAE-399498073B0D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +27,10 @@ Global
 		{BDAC9039-8035-466A-B44C-F358EC6E1E83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BDAC9039-8035-466A-B44C-F358EC6E1E83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BDAC9039-8035-466A-B44C-F358EC6E1E83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F363FFA8-8E2F-448A-8DAE-399498073B0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F363FFA8-8E2F-448A-8DAE-399498073B0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F363FFA8-8E2F-448A-8DAE-399498073B0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F363FFA8-8E2F-448A-8DAE-399498073B0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

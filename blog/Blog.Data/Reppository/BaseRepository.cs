@@ -1,19 +1,20 @@
 ﻿using System;
+using System.Data.Entity;
 using System.Data.Entity.Core.Objects;
 
 namespace Blog.Data.Reppository
 {
 
-  public class BaseRepository<TObjectContext> : IDisposable where TObjectContext : ObjectContext, new()
+  public class BaseRepository<TDbContext> : IDisposable where TDbContext : DbContext, new()
   {
 
-    private TObjectContext _context;
+    private TDbContext _context;
 
-    public TObjectContext Context
+    public TDbContext Context
     {
       get
       {
-        _context = _context ?? new TObjectContext();
+        _context = _context ?? new TDbContext();
 
         return _context;
       }

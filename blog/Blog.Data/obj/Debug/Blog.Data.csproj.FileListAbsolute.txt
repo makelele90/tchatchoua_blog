@@ -8,3 +8,13 @@ C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\bin\Debug\En
 C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\bin\Debug\EntityFramework.SqlServer.dll
 C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\bin\Debug\EntityFramework.xml
 C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\blog\tchatchoua_blog\blog\Blog.Data\obj\Debug\Blog.Data.csprojResolveAssemblyReference.cache
+C:\Projects\blog\tchatchoua_blog\blog\Blog.Data\obj\Debug\Blog.Data.dll
+C:\Projects\blog\tchatchoua_blog\blog\Blog.Data\bin\Debug\Blog.Data.dll.config
+C:\Projects\blog\tchatchoua_blog\blog\Blog.Data\bin\Debug\Blog.Data.dll
+C:\Projects\blog\tchatchoua_blog\blog\Blog.Data\bin\Debug\Blog.Data.pdb
+C:\Projects\blog\tchatchoua_blog\blog\Blog.Data\bin\Debug\EntityFramework.dll
+C:\Projects\blog\tchatchoua_blog\blog\Blog.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\blog\tchatchoua_blog\blog\Blog.Data\bin\Debug\EntityFramework.xml
+C:\Projects\blog\tchatchoua_blog\blog\Blog.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\blog\tchatchoua_blog\blog\Blog.Data\obj\Debug\Blog.Data.pdb
