@@ -8,7 +8,8 @@ using System.Linq.Expressions;
 
 namespace Blog.Data.Reppository
 {
-  public abstract class GenericRepository<T, TDbContext> :BaseRepository<TDbContext>, IRepository<T> where TDbContext : ObjectContext,new ()
+  public abstract class GenericRepository<T, TObjectContext> : BaseRepository<TObjectContext>, IRepository<T>
+    where TObjectContext : ObjectContext, new()
     where T:class 
   {
     readonly IObjectSet<T> _objectSet;

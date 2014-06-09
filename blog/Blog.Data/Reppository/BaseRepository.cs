@@ -4,16 +4,16 @@ using System.Data.Entity.Core.Objects;
 namespace Blog.Data.Reppository
 {
 
-  public class BaseRepository<TDbContext> : IDisposable where TDbContext : ObjectContext, new()
+  public class BaseRepository<TObjectContext> : IDisposable where TObjectContext : ObjectContext, new()
   {
 
-    private  TDbContext _context;
+    private TObjectContext _context;
 
-    public TDbContext Context
+    public TObjectContext Context
     {
       get
       {
-        _context= _context?? new TDbContext();
+        _context = _context ?? new TObjectContext();
 
         return _context;
       }
