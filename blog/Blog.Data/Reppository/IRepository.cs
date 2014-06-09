@@ -1,17 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Linq.Expressions;
+using System.Collections.Generic;
 
 namespace Blog.Data.Reppository
 {
-  public interface IRepository<T,TDbConetxt> where TDbConetxt:new()
+  public interface IRepository<T>
   {
-    IQueryable<T> FindAll();
-    IQueryable<T> FindByName(string name);
-    IQueryable<T> FindByDate(DateTime date);
-    void Create(T item);
-    void Update(T item);
-    void Delete(T item);
+    IEnumerable<T> FindAll();
+    T FindOne(Expression<Func<T, bool>> predicate);
+    IEnumerable<T> Find(Expression<Func<T, bool>> predicate);
+    void Add(T entity);
+    void Update(T entity);
+    void Delete(T entity);
   }
 }

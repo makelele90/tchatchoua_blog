@@ -1,55 +1,49 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Data.Entity.Core.Objects;
 using System.Linq;
-using System.Text;
+using System.Linq.Expressions;
+
 
 namespace Blog.Data.Reppository
 {
-  public class Repository<T, TDbConetxt> : IRepository<T, TDbConetxt> where TDbConetxt : new()
+  public abstract class GenericRepository<T, TDbContext> :BaseRepository<TDbContext>, IRepository<T> where TDbContext : ObjectContext,new ()
+    where T:class 
   {
-    private TDbConetxt _dbConetxt;
-    public  TDbConetxt DbContext 
-    { 
-      get{
-        if (_dbConetxt!=null)
-        {
-          return _dbConetxt;
-        }
+    readonly IObjectSet<T> _objectSet;
 
-        _dbConetxt=new TDbConetxt();
-
-        return _dbConetxt;
-      } 
+    protected GenericRepository()
+    {
+      _objectSet = Context.CreateObjectSet<T>();
     }
 
-    public IQueryable<T> FindAll()
+    public IEnumerable<T> FindAll()
     {
-      throw new NotImplementedException();
+      return _objectSet.ToList();
+    }
+    public T FindOne(Expression<Func<T, bool>> predicate)
+    {
+      return _objectSet.Single(predicate);
+    }
+    public IEnumerable<T> Find(Expression<Func<T, bool>> predicate)
+    {
+      return _objectSet.Where(predicate);
     }
 
-    public IQueryable<T> FindByName(string name)
+    public void Add(T entity)
     {
-      throw new NotImplementedException();
+      _objectSet.AddObject(entity);
     }
 
-    public IQueryable<T> FindByDate(DateTime date)
+    public void Update(T entity)
     {
-      throw new NotImplementedException();
+      _objectSet.Attach(entity);
     }
 
-    public void Create(T item)
+    public void Delete(T entity)
     {
-      throw new NotImplementedException();
-    }
-
-    public void Update(T item)
-    {
-      throw new NotImplementedException();
-    }
-
-    public void Delete(T item)
-    {
-      throw new NotImplementedException();
+      _objectSet.DeleteObject(entity);
     }
   }
 }
