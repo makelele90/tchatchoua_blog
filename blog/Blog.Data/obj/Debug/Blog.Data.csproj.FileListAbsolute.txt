@@ -1,0 +1,4 @@
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\bin\Debug\Blog.Data.dll
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\bin\Debug\Blog.Data.pdb
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\obj\Debug\Blog.Data.dll
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\obj\Debug\Blog.Data.pdb
