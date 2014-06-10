@@ -4,7 +4,7 @@ using System.Data.Entity;
 namespace Blog.Data.Reppository
 {
 
-  public class BaseRepository<TDbContext> : IDisposable where TDbContext : DbContext, new()
+  public abstract class BaseRepository<TDbContext> : IDisposable where TDbContext : DbContext, new()
   {
 
     private TDbContext _context;
@@ -19,7 +19,7 @@ namespace Blog.Data.Reppository
       }
     }
 
-    public void Save()
+    public void SaveChanges()
     {
       Context.SaveChanges();
     }

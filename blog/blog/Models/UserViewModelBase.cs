@@ -4,7 +4,7 @@ using System.Web.Mvc;
 
 namespace blog.Models
 {
-  public class UserViewModel
+  public abstract class UserViewModelBase
   {
     [DisplayName("User Name")]
     [Required]
@@ -17,11 +17,5 @@ namespace blog.Models
     [Required]
     [Compare("Password")]
     public string ConfirmPassword { get; set; }
-
-    [DisplayName("Remember Me?")]
-    public bool RememberMe { get; set; }
-
-    public string ReturnUrl { get; set; }
-
   }
 }

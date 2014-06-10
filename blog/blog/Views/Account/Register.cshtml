@@ -1,5 +1,54 @@
-﻿@{
+﻿@model RegisterViewModel
+@{
     ViewBag.Title = "Register";
 }
 
 <h2>Register</h2>
+
+<div>
+  @Html.ValidationSummary(true)
+</div>
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+  <div>
+    <p>@Html.LabelFor(m=>m.UserName)</p>
+    <p>@Html.TextBoxFor(m=>m.UserName)</p>
+    <p>@Html.ValidationMessageFor(m=>m.UserName)</p>
+  </div>
+  <div>
+    <p>@Html.LabelFor(m => m.Password)</p>
+    <p>@Html.PasswordFor(m => m.Password)</p>
+    <p>@Html.ValidationMessageFor(m => m.Password)</p>
+  </div>
+  <div>
+    <p>@Html.LabelFor(m => m.ConfirmPassword)</p>
+    <p>@Html.PasswordFor(m => m.ConfirmPassword)</p>
+    <p>@Html.ValidationMessageFor(m => m.ConfirmPassword)</p>
+  </div>
+  <div>
+    <p>@Html.LabelFor(m => m.FirstName)</p>
+    <p>@Html.TextBoxFor(m => m.FirstName)</p>
+    <p>@Html.ValidationMessageFor(m => m.FirstName)</p>
+  </div>
+  <div>
+    <p>@Html.LabelFor(m => m.LastName)</p>
+    <p>@Html.TextBoxFor(m => m.LastName)</p>
+    <p>@Html.ValidationMessageFor(m => m.LastName)</p>
+  </div>
+  <div>
+    <p>@Html.LabelFor(m => m.Email)</p>
+    <p>@Html.TextBoxFor(m => m.Email)</p>
+    <p>@Html.ValidationMessageFor(m => m.Email)</p>
+  </div>
+  <div>
+    <p>@Html.LabelFor(m => m.ConfirmEmail)</p>
+    <p>@Html.TextBoxFor(m => m.ConfirmEmail)</p>
+    <p>@Html.ValidationMessageFor(m => m.ConfirmEmail)</p>
+  </div>
+   <div>
+    <p><label for="Avatar"> Avatar</label></p>
+     <p> <input type="file" name="avatar" /></p>
+  </div>
+ 
+  <input type="submit" value="Login"/>
+}
