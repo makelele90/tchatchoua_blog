@@ -50,17 +50,28 @@
     <Compile Include="BlogDataContext.cs" />
     <Compile Include="BlogDbInitializer.cs" />
     <Compile Include="BlogPost.cs" />
+    <Compile Include="Migrations\201406101454546_123.cs" />
+    <Compile Include="Migrations\201406101454546_123.Designer.cs">
+      <DependentUpon>201406101454546_123.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Reppository\BaseRepository.cs" />
     <Compile Include="Reppository\IRepository.cs" />
     <Compile Include="PostComment.cs" />
     <Compile Include="Reppository\GenericRepository.cs" />
     <Compile Include="Reppository\UserRepository.cs" />
+    <Compile Include="Role.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201406101454546_123.resx">
+      <DependentUpon>201406101454546_123.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

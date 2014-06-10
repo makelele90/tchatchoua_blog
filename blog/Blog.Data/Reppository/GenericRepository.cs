@@ -13,13 +13,13 @@ namespace Blog.Data.Reppository
     where T:class 
   {
 
-      public IQueryable<T> FindAll()
+    public IQueryable<T> FindAll()
     {
         return Context.Set<T>();
     }
-    public T FindOne(Expression<Func<T, bool>> predicate)
+    public T Single(Expression<Func<T, bool>> predicate)
     {
-        return Context.Set<T>().Single(predicate);
+        return Context.Set<T>().Where(predicate).FirstOrDefault();
     }
     public IQueryable<T> Find(Expression<Func<T, bool>> predicate)
     {

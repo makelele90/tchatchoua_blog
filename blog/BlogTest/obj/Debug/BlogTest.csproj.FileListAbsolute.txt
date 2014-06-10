@@ -27,3 +27,6 @@ C:\Projects\blog\tchatchoua_blog\blog\BlogTest\obj\Debug\BlogTest.pdb
 C:\Projects\blog\tchatchoua_blog\blog\BlogTest\bin\Debug\BlogTest.dll.config
 C:\Projects\blog\tchatchoua_blog\blog\BlogTest\bin\Debug\EntityFramework.SqlServer.dll
 C:\Projects\blog\tchatchoua_blog\blog\BlogTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\BlogTest\bin\Debug\BlogTest.dll.config
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\BlogTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\BlogTest\bin\Debug\EntityFramework.SqlServer.xml

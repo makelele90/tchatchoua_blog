@@ -18,3 +18,5 @@ C:\Projects\blog\tchatchoua_blog\blog\Blog.Data\bin\Debug\EntityFramework.SqlSer
 C:\Projects\blog\tchatchoua_blog\blog\Blog.Data\bin\Debug\EntityFramework.xml
 C:\Projects\blog\tchatchoua_blog\blog\Blog.Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\Projects\blog\tchatchoua_blog\blog\Blog.Data\obj\Debug\Blog.Data.pdb
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\obj\Debug\Blog.Data.Migrations._123.resources
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\obj\Debug\Blog.Data.csproj.GenerateResource.Cache

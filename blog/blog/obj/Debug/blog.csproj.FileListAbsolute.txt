@@ -102,3 +102,14 @@ C:\Projects\blog\tchatchoua_blog\blog\blog\bin\DotNetOpenAuth.OpenId.RelyingPart
 C:\Projects\blog\tchatchoua_blog\blog\blog\obj\Debug\blog.csprojResolveAssemblyReference.cache
 C:\Projects\blog\tchatchoua_blog\blog\blog\obj\Debug\blog.dll
 C:\Projects\blog\tchatchoua_blog\blog\blog\obj\Debug\blog.pdb
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\blog\bin\EntityFramework.SqlServer.dll
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\blog\bin\EntityFramework.SqlServer.xml
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\blog\bin\Ninject.dll
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\blog\bin\Ninject.xml
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\blog\bin\Ninject.Web.Common.dll
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\blog\bin\Ninject.Web.Mvc.dll
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\blog\bin\WebActivatorEx.dll
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\blog\bin\Ninject.Web.Common.xml
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\blog\bin\Ninject.Web.Mvc.xml
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\blog\bin\Blog.Data.dll
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\blog\bin\Blog.Data.pdb
