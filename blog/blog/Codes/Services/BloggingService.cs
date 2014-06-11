@@ -12,10 +12,11 @@ namespace blog.Codes.Services
   {
     private readonly BlogPostRepository _blogRepository;
     private readonly CategoryRepository _categoryRepository;
-    public BloggingService()
+
+    public BloggingService(BlogPostRepository blogRepository, CategoryRepository categoryRepository)
     {
-      _blogRepository = new BlogPostRepository();
-      _categoryRepository=new CategoryRepository();
+      _blogRepository = blogRepository;
+      _categoryRepository = categoryRepository;
     }
     public OperationStatus AddPost(PostViewModel model)
     {

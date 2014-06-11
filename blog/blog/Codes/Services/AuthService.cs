@@ -13,17 +13,20 @@ namespace blog.Codes.Services
 {
   public class AuthService : IAuthService
   {
-    private readonly UserRepository _repository;
-    public AuthService()
+
+    private readonly UserRepository _userRepository;
+
+    public AuthService(UserRepository userRepository)
     {
-      _repository = new UserRepository();
+      _userRepository = userRepository;
     }
+
     public OperationStatus Login(string username, string password, bool remember)
     {
       var operationStatus = new OperationStatus();
       try
       {
-        var user = _repository.Single(u => u.UserName == username && u.Password == password);
+        var user = _userRepository.Single(u => u.UserName == username && u.Password == password);
 
         if (user != null)
         {
@@ -71,8 +74,8 @@ namespace blog.Codes.Services
       var operation = new OperationStatus();
       try
       {
-        
-        var restrivedUser = _repository.Single(u => u.UserName.ToLower() == model.UserName.ToLower());
+
+        var restrivedUser = _userRepository.Single(u => u.UserName.ToLower() == model.UserName.ToLower());
 
         if (restrivedUser==null)
         {
@@ -89,17 +92,19 @@ namespace blog.Codes.Services
 
           };
 
-          _repository.Add(user);
-
-          _repository.SaveChanges();
+          _userRepository.Add(user);
 
           operation.Status = true;
         }
-        
-        //create message to say user already exist
+        else
+        {
+          //create message to say user already exist
 
-        operation.Status = false;
-        operation.Message = "A user with the same username already exist";
+          operation.Status = false;
+          operation.Message = "A user with the same username already exist";
+        }
+        
+        
       }
       catch (Exception ex)
       {

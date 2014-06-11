@@ -1,4 +1,5 @@
-﻿using Ninject.Modules;
+﻿using Blog.Data.Reppository;
+using Ninject.Modules;
 using blog.Codes.Services;
 
 namespace blog.Codes.DepedencyInjection
@@ -9,6 +10,9 @@ namespace blog.Codes.DepedencyInjection
     {
       Bind<IAuthService>().To<AuthService>();
       Bind<IBloggingService>().To<BloggingService>();
+      Bind<BlogPostRepository>().To<BlogPostRepository>();
+      Bind<CategoryRepository>().To<CategoryRepository>();
+      Bind<UserRepository>().To<UserRepository>();
     }
   }
 }
