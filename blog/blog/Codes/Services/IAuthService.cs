@@ -1,10 +1,11 @@
-﻿using blog.Models;
+﻿using blog.Codes.DTO;
+using blog.Models;
 
 namespace blog.Codes.Services
 {
   public interface IAuthService
   {
-    bool Login(string username,string password, bool remember);
-    bool RegisterUser(RegisterViewModel registrationData);
+    OperationStatus Login(string username, string password, bool remember);
+    OperationStatus RegisterUser(RegisterViewModel registrationData);
   }
 }

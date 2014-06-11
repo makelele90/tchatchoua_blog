@@ -7,18 +7,18 @@ namespace Blog.Data.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.0-30225")]
-    public sealed partial class _123 : IMigrationMetadata
+    public sealed partial class AddCategory : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(_123));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddCategory));
         
         string IMigrationMetadata.Id
         {
-            get { return "201406101454546_123"; }
+            get { return "201406110957371_AddCategory"; }
         }
         
         string IMigrationMetadata.Source
         {
-            get { return null; }
+            get { return Resources.GetString("Source"); }
         }
         
         string IMigrationMetadata.Target

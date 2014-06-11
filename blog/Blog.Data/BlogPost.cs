@@ -17,6 +17,7 @@ namespace Blog.Data
         public DateTime? DateUpdated { get; set; }
         public User CreatedBy { get; set; }
         public User LastUpdatedBy { get; set; }
+        public Category Category { get; set; }
         public ICollection<PostComment> Comment { get; set; }
     }
 }

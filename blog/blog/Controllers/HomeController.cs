@@ -4,7 +4,7 @@ using blog.Codes.Services;
 
 namespace blog.Controllers
 {
-  [Authorize]
+  [AllowAnonymous]
   public class HomeController : BaseController
   {
     

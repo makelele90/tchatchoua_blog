@@ -33,14 +33,16 @@ namespace blog.Controllers
       if (ModelState.IsValid)
       {
 
-        var isAuthenticated = _authService.Login(model.UserName, model.Password, model.RememberMe);
+        var operationStatus = _authService.Login(model.UserName, model.Password, model.RememberMe);
 
-        if (isAuthenticated)
+        if (operationStatus.Status)
         {
            return new RedirectResult(returnUrl);
         }
+
+         ModelState.AddModelError("", operationStatus.Message);
       }
-        ModelState.AddModelError("","Username or Password is Invalid");
+     
         return View(model);
     }
 
@@ -58,13 +60,14 @@ namespace blog.Controllers
       {
         if (avatar != null) model.ImageName = Path.GetFileName(avatar.FileName);
         
-        var isRegistered= _authService.RegisterUser(model);
-        if (isRegistered)
+        var operationStatus= _authService.RegisterUser(model);
+
+        if (operationStatus.Status)
         {
           return new RedirectResult("/Home/Index");
         }
 
-        ModelState.AddModelError("", "Sorry operation registration failed try again later");
+        ModelState.AddModelError("", operationStatus.Message);
       }
       return View(model);
 

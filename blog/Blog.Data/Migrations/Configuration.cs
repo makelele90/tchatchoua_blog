@@ -48,6 +48,21 @@ namespace Blog.Data.Migrations
           {
             context.Users.AddOrUpdate(user);
           }
+
+          //Categories
+          var categories = new List<Category>()
+            {
+
+              new Category() {Name = "Fitsness"},
+              new Category() {Name = "ASP.NET MVC"},
+              new Category() {Name = "C#"}
+            };
+
+
+          foreach (var cat in categories)
+          {
+            context.Categories.AddOrUpdate(cat);
+          }
         }
     }
 }

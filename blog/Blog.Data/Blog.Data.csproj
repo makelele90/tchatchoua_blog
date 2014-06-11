@@ -50,16 +50,15 @@
     <Compile Include="BlogDataContext.cs" />
     <Compile Include="BlogDbInitializer.cs" />
     <Compile Include="BlogPost.cs" />
-    <Compile Include="Migrations\201406101454546_123.cs" />
-    <Compile Include="Migrations\201406101454546_123.Designer.cs">
-      <DependentUpon>201406101454546_123.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201406101537526_1111.cs" />
-    <Compile Include="Migrations\201406101537526_1111.Designer.cs">
-      <DependentUpon>201406101537526_1111.cs</DependentUpon>
+    <Compile Include="Category.cs" />
+    <Compile Include="Migrations\201406110957371_AddCategory.cs" />
+    <Compile Include="Migrations\201406110957371_AddCategory.Designer.cs">
+      <DependentUpon>201406110957371_AddCategory.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Reppository\BaseRepository.cs" />
+    <Compile Include="Reppository\BlogPostRepository.cs" />
+    <Compile Include="Reppository\CategoryRepository.cs" />
     <Compile Include="Reppository\IRepository.cs" />
     <Compile Include="PostComment.cs" />
     <Compile Include="Reppository\GenericRepository.cs" />
@@ -73,11 +72,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201406101454546_123.resx">
-      <DependentUpon>201406101454546_123.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201406101537526_1111.resx">
-      <DependentUpon>201406101537526_1111.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201406110957371_AddCategory.resx">
+      <DependentUpon>201406110957371_AddCategory.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

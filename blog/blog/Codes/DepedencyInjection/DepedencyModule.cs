@@ -8,6 +8,7 @@ namespace blog.Codes.DepedencyInjection
     public override void Load()
     {
       Bind<IAuthService>().To<AuthService>();
+      Bind<IBloggingService>().To<BloggingService>();
     }
   }
 }
