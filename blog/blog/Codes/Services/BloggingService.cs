@@ -26,12 +26,14 @@ namespace blog.Codes.Services
         {
           Title = model.Title,
           Details = model.Details,
-          DateCreated = DateTime.Now
+          DateCreated = DateTime.Now,
+          CategoryId = model.Category
+          
         };
 
         _blogRepository.Add(blogPost);
 
-        _blogRepository.SaveChanges();
+       
 
         operationStatus.Status = true;
 
@@ -78,12 +80,16 @@ namespace blog.Codes.Services
 
       try
       {
-        var blogPost = _blogRepository.Single(post => post.Id == model.Id);
+        var blogPost = _blogRepository.Single(p => p.Id == model.Id);
 
         if (blogPost != null)
         {
+
           blogPost.Title = model.Title;
           blogPost.Details = model.Details;
+          blogPost.CategoryId = model.Category;
+
+          _blogRepository.Update(blogPost);
 
           operationStatus.Status = true;
         }
@@ -101,15 +107,18 @@ namespace blog.Codes.Services
     {
 
 
-      var blogPost = _blogRepository.Single(post => post.Id == postId);
+      var blogPost = _blogRepository.Single(p=>p.Id==postId);
 
       if (blogPost != null)
       {
         return new PostViewModel()
         {
+          Id = blogPost.Id,
           Title = blogPost.Title,
           Details = blogPost.Details,
-          DateCreated = blogPost.DateCreated
+          DateCreated = blogPost.DateCreated,
+          Category = blogPost.CategoryId
+          
         };
       }
 

@@ -1,17 +1,21 @@
 ﻿@model IEnumerable<PostViewModel>
 
 @{
-    ViewBag.Title = "Index";
+  ViewBag.Title = "Index";
 }
 
 <h2>Post Index</h2>
-
-@foreach (var post in @Model)
+@if (Model!=null)
 {
+  foreach (var post in @Model)
+  {
   <div>
-    <p>Id: @post.Id</p>
     <p>Title : @post.Title</p>
     <p>Details: @post.Details</p>
+    <p>@Html.ActionLink("Details", "Detail", new { id = post.Id })&nbsp; @Html.ActionLink("Remove", "Delete", new { id = post.Id })
+    </p>
   </div>
   <hr/>
+  }
 }
+

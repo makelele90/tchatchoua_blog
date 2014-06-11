@@ -9,7 +9,8 @@ namespace Blog.Data
         public BlogDataContext():base("BlogConnectionString")
         {
            // Database.SetInitializer<BlogDataContext>(new BlogDbInitializer());
-          Database.SetInitializer(new MigrateDatabaseToLatestVersion<BlogDataContext, Configuration>("BlogConnectionString"));
+         //Database.SetInitializer(new MigrateDatabaseToLatestVersion<BlogDataContext, Configuration>("BlogConnectionString"));
+          Database.SetInitializer<BlogDataContext>(null);
         }
         public DbSet<BlogPost> Posts { get; set; }
         public DbSet<PostComment> Comments { get; set; }
@@ -27,10 +28,17 @@ namespace Blog.Data
             //BlogPost
             modelBuilder.Entity<BlogPost>().Property(e => e.Title).HasMaxLength(2000).IsRequired();
             modelBuilder.Entity<BlogPost>().Property(e => e.Details).IsRequired();
+          modelBuilder.Entity<BlogPost>().Property(e => e.CategoryId).IsOptional();
 
           //Role
             modelBuilder.Entity<Role>().Property(e => e.Name).HasMaxLength(250).IsRequired();
+
+            //category
+            
             base.OnModelCreating(modelBuilder);
+
+         
+
         }
     }
 }

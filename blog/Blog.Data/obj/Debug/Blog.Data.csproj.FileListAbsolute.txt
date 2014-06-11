@@ -2,7 +2,6 @@ C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\bin\Debug\Bl
 C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\bin\Debug\Blog.Data.pdb
 C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\obj\Debug\Blog.Data.dll
 C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\obj\Debug\Blog.Data.pdb
-C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\obj\Debug\Blog.Data.csprojResolveAssemblyReference.cache
 C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\bin\Debug\Blog.Data.dll.config
 C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\bin\Debug\EntityFramework.dll
 C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\bin\Debug\EntityFramework.SqlServer.dll
@@ -18,5 +17,5 @@ C:\Projects\blog\tchatchoua_blog\blog\Blog.Data\bin\Debug\EntityFramework.SqlSer
 C:\Projects\blog\tchatchoua_blog\blog\Blog.Data\bin\Debug\EntityFramework.xml
 C:\Projects\blog\tchatchoua_blog\blog\Blog.Data\bin\Debug\EntityFramework.SqlServer.xml
 C:\Projects\blog\tchatchoua_blog\blog\Blog.Data\obj\Debug\Blog.Data.pdb
-C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\obj\Debug\Blog.Data.Migrations.AddCategory.resources
+C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\obj\Debug\Blog.Data.Migrations.test.resources
 C:\Francis Projects Demo\ASP.NET MVC\tchatchoua_blog\blog\Blog.Data\obj\Debug\Blog.Data.csproj.GenerateResource.Cache

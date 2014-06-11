@@ -51,9 +51,9 @@
     <Compile Include="BlogDbInitializer.cs" />
     <Compile Include="BlogPost.cs" />
     <Compile Include="Category.cs" />
-    <Compile Include="Migrations\201406110957371_AddCategory.cs" />
-    <Compile Include="Migrations\201406110957371_AddCategory.Designer.cs">
-      <DependentUpon>201406110957371_AddCategory.cs</DependentUpon>
+    <Compile Include="Migrations\201406111602160_test.cs" />
+    <Compile Include="Migrations\201406111602160_test.Designer.cs">
+      <DependentUpon>201406111602160_test.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Reppository\BaseRepository.cs" />
@@ -72,8 +72,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201406110957371_AddCategory.resx">
-      <DependentUpon>201406110957371_AddCategory.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201406111602160_test.resx">
+      <DependentUpon>201406111602160_test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

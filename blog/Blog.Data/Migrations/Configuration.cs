@@ -29,40 +29,40 @@ namespace Blog.Data.Migrations
             //    );
             //
 
-          var users = new List<User> { 
-             new User(){FirstName="francis",LastName="tchatchoua",JoinDate=DateTime.Today,LastLogin=DateTime.Today,UserName ="admin",Password = "1234"},
-             new User(){FirstName="nounou",LastName="carine",JoinDate=DateTime.Today,LastLogin=DateTime.Today,UserName ="admin",Password = "1234"},
-            new User(){FirstName="didier",LastName="njiki",JoinDate=DateTime.Today,LastLogin=DateTime.Today,UserName ="admin",Password = "1234"},
-            new User(){FirstName="joanna",LastName="kamila",JoinDate=DateTime.Today,LastLogin=DateTime.Today,UserName ="admin",Password = "1234"},
-            new User(){FirstName="mary",LastName="mbianga",JoinDate=DateTime.Today,LastLogin=DateTime.Today,UserName ="admin",Password = "1234"}
-            };
+        //  var users = new List<User> { 
+        //     new User(){FirstName="francis",LastName="tchatchoua",JoinDate=DateTime.Today,LastLogin=DateTime.Today,UserName ="admin",Password = "1234"},
+        //     new User(){FirstName="nounou",LastName="carine",JoinDate=DateTime.Today,LastLogin=DateTime.Today,UserName ="admin",Password = "1234"},
+        //    new User(){FirstName="didier",LastName="njiki",JoinDate=DateTime.Today,LastLogin=DateTime.Today,UserName ="admin",Password = "1234"},
+        //    new User(){FirstName="joanna",LastName="kamila",JoinDate=DateTime.Today,LastLogin=DateTime.Today,UserName ="admin",Password = "1234"},
+        //    new User(){FirstName="mary",LastName="mbianga",JoinDate=DateTime.Today,LastLogin=DateTime.Today,UserName ="admin",Password = "1234"}
+        //    };
 
-          var roles = new List<Role>
-            {
-              new Role(){Name = "admin"},
-              new Role(){Name = "editor"},
-              new Role(){Name = "simple"}
+        //  var roles = new List<Role>
+        //    {
+        //      new Role(){Name = "admin"},
+        //      new Role(){Name = "editor"},
+        //      new Role(){Name = "simple"}
             
-            };
-          foreach (var user in users)
-          {
-            context.Users.AddOrUpdate(user);
-          }
+        //    };
+        //  foreach (var user in users)
+        //  {
+        //    context.Users.AddOrUpdate(user);
+        //  }
 
-          //Categories
-          var categories = new List<Category>()
-            {
+        //  //Categories
+        //  var categories = new List<Category>()
+        //    {
 
-              new Category() {Name = "Fitsness"},
-              new Category() {Name = "ASP.NET MVC"},
-              new Category() {Name = "C#"}
-            };
+        //      new Category() {Name = "Fitsness"},
+        //      new Category() {Name = "ASP.NET MVC"},
+        //      new Category() {Name = "C#"}
+        //    };
 
 
-          foreach (var cat in categories)
-          {
-            context.Categories.AddOrUpdate(cat);
-          }
+        //  foreach (var cat in categories)
+        //  {
+        //    context.Categories.AddOrUpdate(cat);
+        //  }
         }
     }
 }

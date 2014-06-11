@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Data.Entity;
 using System.Linq;
-using System.Text;
 
 namespace Blog.Data.Reppository
 {
   public class BlogPostRepository : GenericRepository<BlogPost, BlogDataContext>
   {
 
+    //public BlogPost Single(int id)
+    //{
+    //  return Context.Posts.Where(p => p.Id == id).Include(p => p.Category).FirstOrDefault();
+    //}
   }
 }

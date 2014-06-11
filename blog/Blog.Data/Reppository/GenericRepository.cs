@@ -15,7 +15,7 @@ namespace Blog.Data.Reppository
     {
         return Context.Set<T>();
     }
-    public T Single(Expression<Func<T, bool>> predicate)
+    public virtual T Single(Expression<Func<T, bool>> predicate)
     {
         return Context.Set<T>().Where(predicate).FirstOrDefault();
     }
@@ -27,16 +27,20 @@ namespace Blog.Data.Reppository
     public void Add(T entity)
     {
         Context.Set<T>().Add(entity);
+        SaveChanges();
+
     }
 
     public void Update(T entity)
     {
-        Context.Entry(entity).State = EntityState.Modified;   
+        Context.Entry(entity).State = EntityState.Modified;
+        SaveChanges();
     }
 
     public void Delete(T entity)
     {
         Context.Set<T>().Remove(entity);
+      SaveChanges();
     }
   }
 }

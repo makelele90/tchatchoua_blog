@@ -1,0 +1,13 @@
+﻿@model PostViewModel
+
+@{
+    ViewBag.Title = "Detail";
+}
+
+<h2>Detail</h2>
+
+<div>
+  <p>Title : @Model.Title</p>
+  <p>Details: @Model.Details</p>
+</div>
+@Html.ActionLink("Edit","Edit",new {id=Model.Id})
