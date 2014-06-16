@@ -14,6 +14,7 @@ namespace Blog.Data.Reppository
       get
       {
         _context = _context ?? new TDbContext();
+        _context.Configuration.LazyLoadingEnabled = true;
 
         return _context;
       }

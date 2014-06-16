@@ -6,10 +6,6 @@ namespace Blog.Data
 {
     public class BlogPost
     {
-        public BlogPost()
-        {
-            Comment = new HashSet<PostComment>();
-        }
         public int Id { get; set; }
         public string Title { get; set; }
         public string Details { get; set; }
@@ -19,6 +15,6 @@ namespace Blog.Data
         public User LastUpdatedBy { get; set; }
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
-        public ICollection<PostComment> Comment { get; set; }
+        public virtual ICollection<PostComment> Comment { get; set; }
     }
 }

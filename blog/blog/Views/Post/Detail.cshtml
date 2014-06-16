@@ -1,5 +1,4 @@
 ﻿@model PostViewModel
-
 @{
     ViewBag.Title = "Detail";
 }
@@ -7,7 +6,25 @@
 <h2>Detail</h2>
 
 <div>
-  <p>Title : @Model.Title</p>
-  <p>Details: @Model.Details</p>
+  <p>Title : @Model.Title)</p>
+  <p>Details:@Model.Details)</p>
 </div>
-@Html.ActionLink("Edit","Edit",new {id=Model.Id})
+
+<div id="Comments-box"></div>
+
+<div>
+ <hr/>
+  @using (Html.BeginForm("Create", "Comment",FormMethod.Post))
+  {
+    
+    <div>
+      <p><label>Add comment below</label></p>
+      <p>@Html.TextAreaFor(m => m.Details, new { rows = "4" })</p>
+      <p>@Html.ValidationMessageFor(m => m.Details)</p>
+      @*<input type="hidden" name="PostId" value="@(@postViewModel.Id)"/>*@
+    </div>
+    
+    <input type="submit" value="Comment"/>
+    
+  }
+</div>

@@ -9,22 +9,3 @@
 
 <div>@Html.ValidationSummary(false)</div>
 
-@using (Html.BeginForm())
-{
-  <div>
-  <p>@Html.LabelFor(m => m.Title)</p>
-  <p>@Html.TextBoxFor(m => m.Title)</p>
-  <p>@Html.ValidationMessageFor(m => m.Details)</p>
-</div>
-  <div>
-    <p>@Html.LabelFor(m => m.Details)</p>
-    <p>@Html.TextAreaFor(m => m.Details, new { rows = "10" })</p>
-    <p>@Html.ValidationMessageFor(m => m.Details)</p>
-  </div>
-  <div>
-    <p>@Html.LabelFor(m => m.Category)</p>
-    <p>@Html.DropDownList("Category", categories)</p>
-  </div>
-  <input type="submit" value="Update"/>
-}
-

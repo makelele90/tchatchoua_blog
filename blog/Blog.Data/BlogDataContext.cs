@@ -11,6 +11,7 @@ namespace Blog.Data
            // Database.SetInitializer<BlogDataContext>(new BlogDbInitializer());
          //Database.SetInitializer(new MigrateDatabaseToLatestVersion<BlogDataContext, Configuration>("BlogConnectionString"));
           Database.SetInitializer<BlogDataContext>(null);
+          
         }
         public DbSet<BlogPost> Posts { get; set; }
         public DbSet<PostComment> Comments { get; set; }
